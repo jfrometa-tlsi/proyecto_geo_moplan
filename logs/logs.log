@@ -1,0 +1,17 @@
+2026-01-06 17:01:33,972 - data_fetcher - ERROR - Error en el login: HTTPSConnectionPool(host='moplan.esk.es', port=8082): Max retries exceeded with url: /login (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1033)')))
+2026-01-06 17:04:17,022 - data_fetcher - INFO - [2026-01-06 17:04:17.022007] Login exitoso. Token obtenido.
+2026-01-06 17:04:17,162 - data_fetcher - ERROR - Error al obtener plantas: HTTPSConnectionPool(host='moplan.esk.es', port=8082): Max retries exceeded with url: /proc/p_manPlantas (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1033)')))
+2026-01-06 17:15:58,895 - data_fetcher - INFO - [2026-01-06 17:15:58.895160] Login exitoso. Token obtenido.
+2026-01-06 17:15:59,100 - data_fetcher - INFO - [2026-01-06 17:15:59.099970] Se han recuperado 462 registros de plantas.
+2026-01-06 17:33:39,288 - data_fetcher - INFO - [2026-01-06 17:33:39.288592] Login exitoso. Token obtenido.
+2026-01-06 17:33:39,455 - data_fetcher - INFO - [2026-01-06 17:33:39.455384] Se han recuperado 462 registros de destinos.
+2026-01-06 17:33:39,498 - data_fetcher - INFO - [2026-01-06 17:33:39.498613] Se han recuperado 6 registros de cargaderos.
+2026-01-06 17:33:39,556 - data_fetcher - INFO - [2026-01-06 17:33:39.556649] Se han recuperado 7 registros de planificaciones.
+2026-01-06 17:45:44,406 - data_fetcher - INFO - [2026-01-06 17:45:44.406779] Login exitoso. Token obtenido.
+2026-01-06 17:45:44,468 - data_fetcher - INFO - [2026-01-06 17:45:44.468570] Se han recuperado 6 registros de cargaderos.
+2026-01-06 17:45:44,709 - data_fetcher - INFO - [2026-01-06 17:45:44.709434] Se han recuperado 462 registros de destinos.
+2026-01-06 17:45:44,787 - data_fetcher - INFO - [2026-01-06 17:45:44.787478] Se han recuperado 7 registros de planificaciones.
+2026-01-06 17:45:44,889 - database_manager - INFO - Éxito: Tabla 'maestro_origenes' actualizada con 6 registros.
+2026-01-06 17:45:44,951 - database_manager - INFO - Éxito: Tabla 'maestro_destinos' actualizada con 462 registros.
+2026-01-06 17:45:44,999 - database_manager - INFO - Éxito: Tabla 'planificaciones' actualizada con 7 registros.
+2026-01-06 17:45:45,000 - main_interfaz_datos - INFO - Todos los datos se han integrado y almacenado correctamente.
