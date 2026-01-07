@@ -83,3 +83,32 @@
 2026-01-07 12:57:13,557 - database_manager - INFO - Tabla de caché creada correctamente.
 2026-01-07 12:57:13,558 - route_provider - INFO - >>> Ruta recuperada de la CACHÉ local.
 2026-01-07 12:57:13,565 - app - INFO - Tipo de geometría: <class 'dict'>
+2026-01-07 13:46:27,277 - dash.dash - INFO - Dash is running on http://0.0.0.0:8040/
+
+2026-01-07 13:46:42,699 - app - INFO - No se ha seleccionado ningún pedido.
+2026-01-07 13:46:44,981 - process_manager - INFO - Procesando rutas para cod_pedido: 2800759255040 con 1 registros.
+2026-01-07 13:46:44,984 - database_manager - INFO - Tabla de caché creada correctamente.
+2026-01-07 13:46:44,988 - route_provider - INFO - >>> Ruta recuperada de la CACHÉ local.
+2026-01-07 13:46:44,990 - app - INFO - Tipo de geometría: <class 'dict'>
+2026-01-07 13:47:12,268 - app - INFO - No se ha seleccionado ningún pedido.
+2026-01-07 13:47:14,674 - process_manager - INFO - Procesando rutas para cod_pedido: 2800759275070 con 1 registros.
+2026-01-07 13:47:14,675 - database_manager - INFO - Tabla de caché creada correctamente.
+2026-01-07 13:47:14,677 - route_provider - INFO - >>> Ruta recuperada de la CACHÉ local.
+2026-01-07 13:47:14,679 - app - INFO - Tipo de geometría: <class 'dict'>
+2026-01-07 13:47:26,602 - process_manager - INFO - Procesando rutas para cod_pedido: 2800759255040 con 1 registros.
+2026-01-07 13:47:26,603 - database_manager - INFO - Tabla de caché creada correctamente.
+2026-01-07 13:47:26,605 - route_provider - INFO - >>> Ruta recuperada de la CACHÉ local.
+2026-01-07 13:47:26,607 - app - INFO - Tipo de geometría: <class 'dict'>
+2026-01-07 13:47:33,303 - process_manager - INFO - Procesando rutas para cod_pedido: 2800759282070 con 1 registros.
+2026-01-07 13:47:33,304 - database_manager - INFO - Tabla de caché creada correctamente.
+2026-01-07 13:47:33,306 - route_provider - INFO - >>> Ruta recuperada de la CACHÉ local.
+2026-01-07 13:47:33,307 - app - INFO - Tipo de geometría: <class 'dict'>
+2026-01-07 13:47:37,974 - process_manager - INFO - Procesando rutas para cod_pedido: 2800759304160 con 1 registros.
+2026-01-07 13:47:37,975 - database_manager - INFO - Tabla de caché creada correctamente.
+2026-01-07 13:47:37,988 - route_provider - INFO - >>> Ruta no encontrada. Consultando OSRM...
+2026-01-07 13:47:38,588 - route_provider - INFO - >>> Ruta guardada en la CACHÉ local.
+2026-01-07 13:47:38,590 - app - INFO - Tipo de geometría: <class 'dict'>
+2026-01-07 13:58:39,021 - dash.dash - INFO - Dash is running on http://0.0.0.0:8040/
+
+2026-01-07 13:58:50,355 - app - INFO - No se ha seleccionado ningún pedido.
+2026-01-07 13:58:54,687 - app - INFO - No se ha seleccionado ningún pedido.

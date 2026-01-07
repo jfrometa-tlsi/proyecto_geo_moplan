@@ -1,3 +1,5 @@
+from pathlib import Path
+from flask import Response, request, abort
 import dash
 from dash import dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
@@ -16,6 +18,9 @@ server = app.server  # Para despliegue en plataformas como Heroku
 db = DatabaseManager()
 router = RouteProvider(db)
 
+LOG_FOLDER = Path("logs")
+LOG_FILE = LOG_FOLDER / "logs.log"
+
 @app.server.route("/health")
 def health_check():
     # Intenta una consulta simple a SQLite
@@ -24,6 +29,21 @@ def health_check():
         return {"status": "ok", "database": "connected"}, 200
     except Exception:
         return {"status": "error"}, 500
+
+@app.server.route("/view-logs")
+def view_logs():
+    
+    # Verificación con pathlib
+    if not LOG_FILE.exists():
+        return f"El archivo {LOG_FILE} no existe todavía.", 404
+
+    try:
+        # Leemos el archivo de forma segura
+        lineas = LOG_FILE.read_text(encoding="utf-8").splitlines()
+        ultimas_lineas = lineas[-100:]
+        return Response("\n".join(ultimas_lineas), mimetype="text/plain")
+    except Exception as e:
+        return f"Error al leer los logs: {e}", 500
 
 # Obtener lista inicial de pedidos para el Dropdown
 def get_lista_pedidos():
