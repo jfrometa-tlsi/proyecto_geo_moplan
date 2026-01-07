@@ -16,6 +16,15 @@ server = app.server  # Para despliegue en plataformas como Heroku
 db = DatabaseManager()
 router = RouteProvider(db)
 
+@app.server.route("/health")
+def health_check():
+    # Intenta una consulta simple a SQLite
+    try:
+        db.engine.connect()
+        return {"status": "ok", "database": "connected"}, 200
+    except Exception:
+        return {"status": "error"}, 500
+
 # Obtener lista inicial de pedidos para el Dropdown
 def get_lista_pedidos():
     df = db.leer_tabla("planificaciones")
