@@ -1,6 +1,5 @@
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 import pandas as pd
-import os
 from logger import setup_logger
 
 logger = setup_logger("database_manager")
@@ -10,6 +9,20 @@ class DatabaseManager:
     def __init__(self, db_name="logistica.db") -> None:
         # Creamos la conexión a SQLite (el archivo se creará automáticamente)
         self.engine = create_engine(f"sqlite:///{db_name}")
+
+    def crear_tablas_cache(self) -> None:
+        query = """
+        CREATE TABLE IF NOT EXISTS cache_rutas (
+            route_id TEXT PRIMARY KEY,
+            geometria TEXT NOT NULL,
+            distancia_km REAL,
+            duracion_min REAL,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        );
+        """
+        with self.engine.begin() as conn:
+            conn.execute(text(query))
+            logger.info("Tabla de caché creada correctamente.")
     
     def guardar_datos(self, df: pd.DataFrame, table_name: str, if_exists='replace'):
         """

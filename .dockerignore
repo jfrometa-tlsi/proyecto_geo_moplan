@@ -1,0 +1,34 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Archivos de configuración sensible
+.env
+auth.json
+
+# Cache de Python y Tests
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Base de datos local (Solo si quieres que el contenedor empiece vacío)
+# Si vas a usar Volúmenes, es mejor ignorar la copia inicial aquí
+#*.db
+#*.sqlite3
+
+# Git y metadatos
+.git
+.gitignore
+.github/
+
+# Documentación y archivos extra
+README.md
+docs/
+docker-compose.yml
+Dockerfile
+.dockerignore
