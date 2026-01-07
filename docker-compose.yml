@@ -1,0 +1,23 @@
+services:
+  logistica-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: logistica_dashboard
+    restart: always
+    ports:
+      - "8050:8050"
+    env_file:
+      - .env
+    volumes:
+      - ./logistica.db:/app/logistica.db
+      - ./logs:/app/logs
+    # Opcional: Limitar recursos para que no afecte al servidor
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+networks:
+  default:
+    name: logistica_network
