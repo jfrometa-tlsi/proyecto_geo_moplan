@@ -4,6 +4,8 @@
 ![Python Version](https://img.shields.io/badge/python-3.13-blue)
 ![Docker](https://img.shields.io/badge/docker-%E2%9C%94-blue)
 
+![Demostración del Dashboard de Análisis de Almacén](gif.gif)
+
 Esta aplicación es una solución integral para la visualización y optimización de rutas logísticas. Extrae datos de planificación de una API externa, gestiona una base de datos local en SQLite, utiliza un motor de rutas con caché (OSRM) y presenta los resultados en un dashboard interactivo construido con **Dash** y **Leaflet**.
 
 ## 🚀 Características Principales
