@@ -114,3 +114,8 @@
 2026-01-07 13:58:54,687 - app - INFO - No se ha seleccionado ningún pedido.
 2026-01-07 15:40:09,858 - dash.dash - INFO - Dash is running on http://0.0.0.0:8040/
 
+2026-01-07 15:40:28,053 - app - INFO - No se ha seleccionado ningún pedido.
+2026-01-07 15:41:58,936 - process_manager - INFO - Procesando rutas para cod_pedido: 2800759255040 con 1 registros.
+2026-01-07 15:41:58,941 - database_manager - INFO - Tabla de caché creada correctamente.
+2026-01-07 15:41:58,946 - route_provider - INFO - >>> Ruta recuperada de la CACHÉ local.
+2026-01-07 15:41:58,949 - app - INFO - Tipo de geometría: <class 'dict'>
