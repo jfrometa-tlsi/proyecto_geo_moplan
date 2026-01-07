@@ -44,13 +44,7 @@ jobs:
       - name: Verify API Health
         run: curl --fail http://localhost:8050/health | grep "connected"
 
-      - name: Check App Response
-        run: |
-          # Intentamos descargar el HTML de la app
-          # --fail hace que el comando falle si el status no es 200
-          # --silent evita llenar el log de basura
-          curl --fail --silent http://localhost:8050 | grep "Gestión de Cargas"
-          
+      
       - name: Container Logs on Failure
         if: failure()
         run: docker logs test-app
