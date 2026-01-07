@@ -1,6 +1,6 @@
 # 🚚 Sistema de Gestión Logística e Interfaz de Rutas
 
-[![CI/CD Pipeline](https://github.com/TU_USUARIO/TU_REPO/actions/workflows/main.yml/badge.svg)](https://github.com/TU_USUARIO/TU_REPO/actions)
+[![CI/CD Pipeline](https://github.com//jfrometa88/proyecto_geo_moplan/actions/workflows/main.yml/badge.svg)](https://github.com/TU_USUARIO/TU_REPO/actions)
 ![Python Version](https://img.shields.io/badge/python-3.13-blue)
 ![Docker](https://img.shields.io/badge/docker-%E2%9C%94-blue)
 
@@ -52,9 +52,15 @@ La aplicación estará disponible en: `http://localhost:8050`
 ```text
 ├── .github/workflows/  # Pipelines de CI/CD
 ├── logs/               # Logs persistentes (mapeado por volumen)
-├── router/             # Lógica de OSRM y gestión de caché
-├── database/           # Modelos de SQLAlchemy y conexión SQLite
+├── router.py           # Lógica de OSRM y gestión de caché
+├── data_fetcher.py     # utilidad para carga de datos
+├── main_interfaz_datos.py  # Modelos de SQLAlchemy y conexión SQLite
+├── database.py         # Modelos de SQLAlchemy y conexión SQLite
+├── logistica.db           # BBDD de SQLite
+├── process.py           # procesador de datos
+├── logger.py           # Para logging
 ├── app.py              # Aplicación principal de Dash
+├── test_logic.py           # Prueba unitaria de lógica
 ├── Dockerfile          # Definición de la imagen de contenedor
 ├── docker-compose.yml  # Orquestación de servicios y volúmenes
 └── requirements.txt    # Dependencias del proyecto
